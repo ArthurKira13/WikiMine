@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Quase tudo sobre Minecraft</title>
+    <link rel="stylesheet" href="../../global.css">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="icon" type="image/png" href="../../assets/img/sword.png" />
+    <script src="./home.js"></script>
+    <script src="../../global.js"></script>
+</head>
+
+<body class="body" onLoad="loadingPages()">
+
+    <div class="box-loading" id="loading">
+        <div class="loading"></div>
+    </div>
+
+    <div class="finish-loading" id="finish-loading">
+        <div>
+            <div class="header">
+                <h1>Quase Tudo Sobre Minecraft</h1>
+            </div>
+        </div>
+
+        <div class="toolbar">
+            <div class="container">
+
+                <div class="btn" onclick="toggleActive(this)">
+                    <div class="btn-left"></div>
+                    <div class="btn-right"></div>
+                </div>
+
+                <div class="search" onclick="toggleActiveSearch(this)">
+                    <div class="search-bar">
+                        <div class="search-bar__close">
+                            <div class="search-bar__close--top"> </div>
+                            <div class="search-bar__close--bottom"> </div>
+                        </div>
+                        <div class="search-bar__circle"></div>
+                        <div class="search-bar__rectangle"></div>
+                        <input class="search-bar__hide" type="search" name="search" placeholder="Search..."
+                            onclick="event.stopPropagation()">
+                        <input class="search-bar__submit" type="submit" name="submit" onclick="event.stopPropagation()">
+                    </div>
+                </div>
+
+                <div>
+                    <button type="button" class="buttons__bar">About</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="columns-box">
+        <div class="columns-top">
+            <h2>Column 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet soluta doloribus eos dolorum
+                sequi magnam ducimus quia perferendis mollitia sunt, quis illum placeat. Numquam voluptate vitae
+                voluptas rem nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet soluta doloribus eos dolorum
+                sequi magnam ducimus quia perferendis mollitia sunt, quis illum placeat. Numquam voluptate vitae
+                voluptas rem nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet soluta doloribus eos dolorum
+                sequi magnam ducimus quia perferendis mollitia sunt, quis illum placeat. Numquam voluptate vitae
+                voluptas rem nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet soluta doloribus eos dolorum
+                sequi magnam ducimus quia perferendis mollitia sunt, quis illum placeat. Numquam voluptate vitae
+                voluptas rem nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet soluta doloribus eos dolorum
+                sequi magnam ducimus quia perferendis mollitia sunt, quis illum placeat. Numquam voluptate vitae
+                voluptas rem nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet soluta doloribus eos dolorum
+                sequi magnam ducimus quia perferendis mollitia sunt, quis illum placeat. Numquam voluptate vitae
+                voluptas rem nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet soluta doloribus eos dolorum
+                sequi magnam ducimus quia perferendis mollitia sunt, quis illum placeat. Numquam voluptate vitae
+                voluptas rem nisi.
+            </p>
+        </div>
+        <div class="columns-middle">
+            <h2>Column 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet soluta doloribus eos dolorum
+                sequi magnam ducimus quia perferendis mollitia sunt, quis illum placeat. Numquam voluptate vitae
+                voluptas rem nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet soluta doloribus eos dolorum
+                sequi magnam ducimus quia perferendis mollitia sunt, quis illum placeat. Numquam voluptate vitae
+                voluptas rem nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet soluta doloribus eos dolorum
+                sequi magnam ducimus quia perferendis mollitia sunt, quis illum placeat. Numquam voluptate vitae
+                voluptas rem nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet soluta doloribus eos dolorum
+                sequi magnam ducimus quia perferendis mollitia sunt, quis illum placeat. Numquam voluptate vitae
+                voluptas rem nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet soluta doloribus eos dolorum
+                sequi magnam ducimus quia perferendis mollitia sunt, quis illum placeat. Numquam voluptate vitae
+                voluptas rem nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet soluta doloribus eos dolorum
+                sequi magnam ducimus quia perferendis mollitia sunt, quis illum placeat. Numquam voluptate vitae
+                voluptas rem nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet soluta doloribus eos dolorum
+                sequi magnam ducimus quia perferendis mollitia sunt, quis illum placeat. Numquam voluptate vitae
+                voluptas rem nisi.
+            </p>
+        </div>
+        <div class="columns-bottom">
+            <h2>Column 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet soluta doloribus eos dolorum
+                sequi magnam ducimus quia perferendis mollitia sunt, quis illum placeat. Numquam voluptate vitae
+                voluptas rem nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet soluta doloribus eos dolorum
+                sequi magnam ducimus quia perferendis mollitia sunt, quis illum placeat. Numquam voluptate vitae
+                voluptas rem nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet soluta doloribus eos dolorum
+                sequi magnam ducimus quia perferendis mollitia sunt, quis illum placeat. Numquam voluptate vitae
+                voluptas rem nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet soluta doloribus eos dolorum
+                sequi magnam ducimus quia perferendis mollitia sunt, quis illum placeat. Numquam voluptate vitae
+                voluptas rem nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet soluta doloribus eos dolorum
+                sequi magnam ducimus quia perferendis mollitia sunt, quis illum placeat. Numquam voluptate vitae
+                voluptas rem nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet soluta doloribus eos dolorum
+                sequi magnam ducimus quia perferendis mollitia sunt, quis illum placeat. Numquam voluptate vitae
+                voluptas rem nisi.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

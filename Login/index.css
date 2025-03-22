@@ -1,0 +1,162 @@
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: center;
+
+  color: var(--green-600);
+  padding: 50px;
+  position: relative;
+  animation-name: login-up-and-down;
+  animation-duration: 4s;
+}
+body {
+  background-image: linear-gradient(
+    to bottom,
+    var(--green-1000),
+    var(--green-800),
+    var(--green-1000)
+  );
+  overflow: hidden;
+}
+
+/* Search */
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--green-800);
+  color: var(--green-600);
+  padding: 10px;
+  position: relative;
+  animation-name: login-center;
+  animation-duration: 4s;
+}
+
+/* Login */
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login__box {
+  background-image: radial-gradient(
+    circle,
+    var(--green-opacity-1000),
+    var(--green-opacity-800)
+  );
+  width: 320px;
+  height: 400px;
+  margin-top: 29px;
+  border-radius: 15px;
+  padding: 30px 15px;
+  position: relative;
+  animation-name: login-up-and-down;
+  animation-duration: 4s;
+}
+.login__name {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0 30px 0;
+  font-size: 24px;
+}
+.login_itens {
+  font-weight: 600;
+  font-size: 20px;
+}
+.login__itens--info {
+  font-size: 15px;
+  height: 27px;
+  width: 289px;
+  padding: 3px 10px;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  margin-bottom: 2px;
+  border: none;
+}
+
+.login__forgot--button {
+  border: none;
+  background-color: inherit;
+  /* color: var(--green-600); */
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+}
+.login__forgot--button:hover {
+  color: var(--green-200);
+}
+.login__sign {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login__sign--button {
+  border: none;
+  background-color: var(--green-opacity-800);
+  font-size: 26px;
+  padding: 3px 19px;
+  margin: 15px 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login__sign--button:hover {
+  background-color: var(--green-opacity-800);
+  transition: var(--green-100);
+}
+
+.login__create {
+  display: flex;
+  gap: 7px;
+  margin: 30px 0;
+  font-size: 13px;
+}
+
+.login__create--button {
+  border: none;
+  background-color: inherit;
+  color: var(--green-600);
+  cursor: pointer;
+}
+
+.login__create--button:hover {
+  color: var(--green-800);
+  text-decoration: underline;
+}
+
+.error {
+  color: red;
+  display: none;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+/* Animations */
+
+@keyframes login-up-and-down {
+  0% {
+    background-color: var(--green-1000);
+    left: -1000px;
+    top: 0px;
+  }
+  50% {
+    left: 0px;
+    top: 0px;
+  }
+}
+@keyframes login-center {
+  0% {
+    background-color: var(--green-1000);
+    right: -1000px;
+    top: 0px;
+  }
+  50% {
+    right: 0px;
+    top: 0px;
+  }
+}

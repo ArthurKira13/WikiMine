@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+button[disabled] {
+  opacity: 0.5;
+  color: var(--green-1000);
+}
+
+button:active {
+  opacity: 0.8;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  overflow: inherit; /* Impede a rolagem  sem precisar*/
+  scrollbar-width: thin;
+  scrollbar-color: var(--green-800) var(--green-925);
+}
+
+:root {
+  --green-100: hsl(108deg, 29%, 90%);
+  --green-200: hsl(108deg, 29%, 85%);
+  --green-250: hsl(108deg, 29%, 87.5%);
+  --green-300: hsl(108deg, 29%, 70%);
+  --green-400: hsl(108deg, 29%, 65%);
+  --green-500: hsl(108deg, 29%, 55%);
+  --green-600: hsl(108deg, 29%, 45%);
+  --green-700: hsl(108deg, 29%, 35%);
+  --green-800: hsl(108deg, 29%, 20%);
+  --green-850: hsl(108deg, 29%, 15%);
+  --green-900: hsl(108deg, 29%, 10%);
+  --green-925: hsl(108deg, 29%, 7.5%);
+  --green-950: hsl(108deg, 29%, 5%);
+  --green-1000: hsl(108deg, 29%, 2.5%);
+
+  --green-opacity-100: hsl(108deg, 29%, 90%, 50%);
+  --green-opacity-200: hsl(108deg, 29%, 85%, 50%);
+  --green-opacity-250: hsl(108deg, 29%, 87.5%, 50%);
+  --green-opacity-300: hsl(108deg, 29%, 70%, 50%);
+  --green-opacity-400: hsl(108deg, 29%, 65%, 50%);
+  --green-opacity-500: hsl(108deg, 29%, 55%, 50%);
+  --green-opacity-600: hsl(108deg, 29%, 45%, 50%);
+  --green-opacity-700: hsl(108deg, 29%, 35%, 50%);
+  --green-opacity-800: hsl(108deg, 29%, 20%, 50%);
+  --green-opacity-900: hsl(108deg, 29%, 15%, 50%);
+  --green-opacity-950: hsl(108deg, 29%, 5%, 50%);
+  --green-opacity-1000: hsl(108deg, 29%, 2.5%, 50%);
+}
+
+/* pre loading */
+.loading {
+  background: var(--green-400);
+
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 50%;
+  left: 50%;
+  transition-duration: 1s;
+  animation: loading-center 3s infinite linear;
+}
+.loading:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  top: 0px;
+  left: 30px;
+  transition-duration: 1s;
+  animation: loading-before 1.5s infinite linear;
+}
+.loading:after {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  top: 0px;
+  left: -30px;
+  transition-duration: 1s;
+  animation: loading-after 1.5s infinite linear;
+}
+.box-loading {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.finish-loading {
+  display: none;
+}
+
+@keyframes loading-after {
+  0% {
+    transform: translate(0px);
+  }
+  50% {
+    transform: translate(60px);
+    background-color: var(--green-900);
+  }
+}
+@keyframes loading-before {
+  0% {
+    transform: translate(0px);
+    background-color: var(--green-900);
+  }
+  50% {
+    transform: translate(-60px);
+  }
+}
+
+@keyframes loading-center {
+  0% {
+    transform: rotateZ(360deg);
+    background-color: var(--green-900);
+  }
+  50% {
+    transform: rotateZ(360deg);
+  }
+}
